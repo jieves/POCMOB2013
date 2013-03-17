@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Poc Mobile</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="css/idangerous.swiper.css">        
+	<link href="css/custom-css.css" rel="stylesheet" media="screen" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="js/custom-scripting.js"></script>
+    <script defer src="js/idangerous.swiper-1.8.min.js"></script>
+    
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+<div data-role="page" id="ios-theme">
+
+	<div data-role="header">
+		<h1>Maak uw keuze</h1>
+		<a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="fade">Home</a>	
+
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Welkom</p>	
+		
+        <script type="text/javascript">
+         //   $("#myPage").live('pageinit', function() {
+         //       // do something here...
+		 //       $.mobile.changePage( "download_artikelen.html", { transition: "slideup"} );
+         //   });
+        </script>
+
+
+		
+        <ul data-role="listview" data-inset="true">
+			<li data-role="list-divider">Kies een actie</li>
+			<li><a href="kies_leverancier.html"> <img class="myListLogo" src="./img/icon_leverancier.png"> <h1 class="myHeader">Kies een leverancier</h1><p class="myParagraph">Koop artikelen</p></a></li>
+			<li><a href="synchronise.html"> <img class="myListLogo" src="./img/icon_synchronise.png"> <h1 class="myHeader">Synchroniseren</h1><p class="myParagraph">Download een selectie van artikelen en leveranciers en upload bestellingen</p></a></li>
+			<li><a href="instellingen.html"> <img class="myListLogo" src="./img/icon_settings.png"> <h1 class="myHeader">Instellingen</h1><p class="myParagraph">Wijzig uw persoonlijke gegevens</p></a></li>
+		</ul>
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
