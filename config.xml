@@ -3,17 +3,26 @@
 xmlns:gap = "http://phonegap.com/ns/1.0"
 id = "nl.axi.ApexPhoneGap"
 version = "1.0.0">
-<name>Apex PhoneGap</name>
+<name>Demo Beheyt</name>
 <description>
 This application shows a simple use case for using Apex with PhoneGap.
 </description>
 <author href="http://www.axi.nl" email="evrm@axi.nl">Erik-jan Vermaire </author>
 <!--feature name="http://api.phonegap.com/1.0/device" /> -->
 
+<feature name="http://api.phonegap.com/1.0/battery"/>
+<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/contacts"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
 <feature name="http://api.phonegap.com/1.0/geolocation"/>
+<feature name="http://api.phonegap.com/1.0/media"/>
 <feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/notification"/>
+
+<access origin="*" />
 
 <preference name="OpenAllWhitelistURLsInWebView" value="yes" />
+<preference name="orientation" value="default" />
 <access origin="*" />
 <preference name="phonegap-version" value="2.0.0" />
 <preference name="orientation" value="default" />
