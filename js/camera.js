@@ -53,7 +53,7 @@
         function onDeviceReady() {
             pictureSource = navigator.camera.PictureSourceType;
             destinationType = navigator.camera.DestinationType;
-            alert("device is ready");
+            //alert("device is ready");
         }
 
         // Called when a photo is successfully retrieved
