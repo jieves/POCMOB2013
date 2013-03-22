@@ -26,15 +26,15 @@ $(document).bind("mobileinit", function(){
 //	$.mobile.ajaxEnabled = false; 
 });
 	
-//$(document).delegate('#article_list', 'pageinit', function() {
-//
-//	var db = openDatabase("axipocmob", "1.0", "AXI POC Mobile", 2 * 1024 * 1024);
-//	db.transaction(function(tx){
-//		  tx.executeSql('SELECT * FROM artikelen', [], queryArtikelenSuccess, queryError);
-//	});
-//
-//	
-//});
+$(document).delegate('#article_list', 'pageinit', function() {
+
+	var db = openDatabase("axipocmob", "1.0", "AXI POC Mobile", 2 * 1024 * 1024);
+	db.transaction(function(tx){
+		  tx.executeSql('SELECT * FROM artikelen', [], queryArtikelenSuccess, queryError);
+	});
+
+	
+});
 	
 //Deze code moet geplaatst worden in de eerste pagina waarvan de andere via Ajax opgeroepen worden
 $(document).delegate('#article_detail', 'pageinit', function() {
