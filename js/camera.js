@@ -79,6 +79,13 @@
 			
 			
         }
+		
+        function verwijderfoto() {
+            //
+            var smallImage = document.getElementById('smallImage');
+            smallImage.style.display = 'none';
+			smallImagedelete.style.display = 'none';
+        }		
 
         // Called when a photo is successfully retrieved
         //
