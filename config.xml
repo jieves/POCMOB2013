@@ -40,5 +40,6 @@ This application shows a simple use case for using Apex with PhoneGap.
 
 <plugin name="Capture" value="CDVCapture" />
 <plugin name="Camera" value="CDVCamera" />
+<plugin name="Geolocation" value="CDVLocation" />
 
 </widget>
