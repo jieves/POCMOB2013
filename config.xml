@@ -23,11 +23,11 @@ This application shows a simple use case for using Apex with PhoneGap.
 
 <preference name="OpenAllWhitelistURLsInWebView" value="yes" />
 <preference name="orientation" value="default" />
-<access origin="*" />
+
 <preference name="phonegap-version" value="2.3.0" />
-<preference name="orientation" value="default" />
 
 <preference name="target-device" value="universal" />
+<preference name="stay-in-webview" value="false" />
 
 <preference name="fullscreen" value="false" />
 
