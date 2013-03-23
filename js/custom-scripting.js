@@ -155,3 +155,47 @@ function appendArtikel(artikel){
 function queryError(err) {
 	console.log("Fout bij ophalen gegevens: " + err.code);
 }
+
+
+			
+			var mobileDemo = { 'center': '50.82293754987534, 3.263620000000003', 'zoom': 10 };
+			
+
+			
+			$('#directions_map').live('pageinit', function() {
+				demo.add('directions_map', function() {
+					$('#map_canvas_1').gmap({'center': mobileDemo.center, 'zoom': mobileDemo.zoom, 'disableDefaultUI':true, 'callback': function() {
+						var self = this;
+						self.set('getCurrentPosition', function() {
+							self.refresh();
+							self.getCurrentPosition( function(position, status) {
+								if ( status === 'OK' ) {
+									var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+									self.get('map').panTo(latlng);
+									self.search({ 'location': latlng }, function(results, status) {
+										if ( status === 'OK' ) {
+											$('#from').val(results[0].formatted_address);
+										}
+									});
+								} else {
+									//alert('Unable to get current position');
+								}
+							});
+						});
+						$('#submit').click(function() {
+							self.displayDirections({ 'origin': $('#from').val(), 'destination': $('#to').val(), 'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 'panel': document.getElementById('directions')}, function(response, status) {
+								( status === 'OK' ) ? $('#results').show() : $('#results').hide();
+							});
+							return false;
+						});
+					}});
+				}).load('directions_map');
+			});
+			
+			$('#directions_map').live('pageshow', function() {
+				demo.add('directions_map', $('#map_canvas_1').gmap('get', 'getCurrentPosition')).load('directions_map');
+			});
+			
+
+				
+
