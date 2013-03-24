@@ -20,7 +20,7 @@
         function captureImage() {
             // Launch device camera application, 
             // allowing user to capture up to 2 images
-            navigator.device.capture.captureImage(captureSuccess, captureError, { limit: 2 });
+            navigator.device.capture.captureImage(onPhotoDataSuccess, captureError, { limit: 2 });
         }
 
         // Upload files to server
