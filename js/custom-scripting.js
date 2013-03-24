@@ -47,6 +47,35 @@ $(document).delegate('#article_detail', 'pageinit', function() {
 
 }); 
 
+$(document).delegate('#detail_bezoek', 'pageinit', function() {		
+
+      state = $("#toggle_bezoekok").val();
+	  if (state.toString() == "ok") {
+		 $('div#bewaar_verslag input[type=button]').button('enable'); 
+	  } else {
+   	     $('div#bewaar_verslag input[type=button]').button('disable');
+	  };
+
+	$('select#toggle_bezoekok').change(function() {
+      state = $("#toggle_bezoekok").val();
+	  if (state.toString() == "ok") {
+		 $('div#bewaar_verslag input[type=button]').button('enable'); 
+	  } else {
+   	     $('div#bewaar_verslag input[type=button]').button('disable');
+	  };
+    });
+	
+    $("#butt_bewaar_verslag").bind( "click", function(event, ui) {
+       $.mobile.loading( 'show', { text: "Verslag wordt bewaard", textonly: false });
+	   setTimeout( function() { $.mobile.hidePageLoadingMsg(); $.mobile.changePage( "overzicht_bezoeken.html", { transition: "fade"} ); },1000 );
+    });	
+
+	
+});
+	
+
+	
+
 function showHideDiv(v_div) { 
    var divstyle = new String(); 
    divstyle = document.getElementById(v_div).style.visibility; 
