@@ -19,7 +19,9 @@ This application shows a simple use case for using Apex with PhoneGap.
 <feature name="http://api.phonegap.com/1.0/network"/>
 <feature name="http://api.phonegap.com/1.0/notification"/>
 
-<access origin="*" />
+<access origin="*.google.com" />
+<access origin="*.googleapis.com" />
+<access origin="*.gstatic.com" />
 
 <preference name="OpenAllWhitelistURLsInWebView" value="no" />
 <preference name="orientation" value="default" />
