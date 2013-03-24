@@ -30,19 +30,14 @@
 
 	<div data-role="content">	
     
-    <button onclick="capturePhoto();">Klik hier om een foto te nemen</button> <br><br>
-     
+    <!--<button onclick="capturePhoto();">Klik hier om een foto te nemen</button> <br><br>
     <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br><br> 
     <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br><br>
-    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br><br>
-        <img style="display:none;width:200px;height:200px;" id="smallImage" src="" />
+    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br><br>-->
+    <button onclick="captureImage();">Klik hier om een foto te nemen</button> <br>       
+    <img style="display:none;width:200px;height:200px;" id="smallImage" src="" />
     <a href="javascript:verwijderfoto();" data-role="button" data-inline="true" data-transition="pop" data-mini="true" data-theme="a" data-icon="delete" id="smallImagedelete" style="display:none;">Verwijderen</a>
-        <img style="display:none;" id="largeImage" src="" />
-    <br><button onclick="captureImage();">Capture Image</button> <br>       
-    
-
-    
-    
+     <!-- <img style="display:none;" id="largeImage" src="" />-->
     
 	</div><!-- /content -->
 	
