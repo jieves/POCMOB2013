@@ -161,6 +161,7 @@ tbody tr td img {
 }
 
 
+
 /* Schaduw van linkse item-list afzetten */
 /*
 #column_left, #column_right .ui-shadow {
@@ -179,6 +180,15 @@ tbody tr td img {
 */
 
 }
+
+#banner {	
+   background-image: url('../img/banner001.png');
+   background-repeat: no-repeat;
+   margin: -20px;
+   height: 275px;
+   width: 1030px;
+   overflow: show;
+   }
 
 #accessoire_list .ui-btn {
 	height: 55px;

@@ -23,6 +23,8 @@ This application shows a simple use case for using Apex with PhoneGap.
 <access origin="*.googleapis.com" />
 <access origin="*.gstatic.com" />
 
+<access origin="*.wlu1114be.*" />
+
 <preference name="OpenAllWhitelistURLsInWebView" value="no" />
 <preference name="orientation" value="default" />
 
